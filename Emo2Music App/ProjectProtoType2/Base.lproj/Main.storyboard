@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ySV-vn-FZ5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectProtoType2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LzR-sQ-x6R">
+                                <rect key="frame" x="0.0" y="8" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpk-9j-gqQ">
+                                        <rect key="frame" x="0.0" y="623" width="375" height="34"/>
+                                        <color key="backgroundColor" red="0.043487935312017528" green="0.69475037873019974" blue="0.99953407049179077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="22"/>
+                                        <state key="normal" title="Smile &amp; Click">
+                                            <color key="titleColor" red="0.99410810346810941" green="0.97900721344728181" blue="0.99953407049179077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8L-L7-osk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Kpk-9j-gqQ" secondAttribute="bottom" constant="10" id="hGe-eG-20k"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kpk-9j-gqQ" secondAttribute="trailing" id="p3H-rc-zar"/>
+                                    <constraint firstItem="Kpk-9j-gqQ" firstAttribute="leading" secondItem="LzR-sQ-x6R" secondAttribute="leading" id="xAR-rD-poE"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnK-6e-Atp">
+                                <rect key="frame" x="276" y="613" width="83" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.75474880582337045" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="22"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequestToServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFF-Cp-zVO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cx-Bl-w0W">
+                                <rect key="frame" x="16" y="613" width="66" height="34"/>
+                                <color key="backgroundColor" red="0.024516575605919688" green="0.66062806698558996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="22"/>
+                                <state key="normal" title="Retake">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="retakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZhL-FK-O2A"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gP3-8U-RMJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LzR-sQ-x6R" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="8xn-77-st3"/>
+                            <constraint firstItem="LzR-sQ-x6R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ADO-qD-5uM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EnK-6e-Atp" secondAttribute="bottom" constant="20" id="Ax7-gZ-QAJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EnK-6e-Atp" secondAttribute="trailing" id="Gvc-Oy-2n5"/>
+                            <constraint firstItem="2Cx-Bl-w0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LZ7-9P-Sfb"/>
+                            <constraint firstItem="gP3-8U-RMJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NqA-4u-oEe"/>
+                            <constraint firstItem="gP3-8U-RMJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="OHs-Lz-SME"/>
+                            <constraint firstItem="gP3-8U-RMJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tb9-CB-Ej0"/>
+                            <constraint firstItem="LzR-sQ-x6R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="diW-09-9Ub"/>
+                            <constraint firstItem="LzR-sQ-x6R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pCW-DX-C5c"/>
+                            <constraint firstItem="gP3-8U-RMJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="srP-dZ-Whm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Cx-Bl-w0W" secondAttribute="bottom" constant="20" id="vx6-ct-UUC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvx-Og-AQT"/>
+                    <connections>
+                        <outlet property="button" destination="Kpk-9j-gqQ" id="xAG-Wq-xzh"/>
+                        <outlet property="cameraView" destination="LzR-sQ-x6R" id="XAs-N6-9GI"/>
+                        <outlet property="continueButton" destination="EnK-6e-Atp" id="MNv-Mj-J0x"/>
+                        <outlet property="myImageView" destination="gP3-8U-RMJ" id="bbl-5j-MEL"/>
+                        <outlet property="retakeButton" destination="2Cx-Bl-w0W" id="21u-YU-lAp"/>
+                        <outlet property="smileButton" destination="Kpk-9j-gqQ" id="9Df-hB-os0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="122.78860569715144"/>
+        </scene>
+        <!--PlayListVC-->
+        <scene sceneID="xEL-fl-JvO">
+            <objects>
+                <tableViewController id="nqi-DM-Gix" userLabel="PlayListVC" customClass="PlayListVC" customModule="ProjectProtoType2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcD-JW-v9m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayListVC" id="0Ss-6b-BDF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Ss-6b-BDF" id="33k-oG-l7n">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nqi-DM-Gix" id="5s2-tY-c5b"/>
+                            <outlet property="delegate" destination="nqi-DM-Gix" id="FMa-gg-ALo"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4Z-qJ-8ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uil-Ix-f4N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ySV-vn-FZ5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JHk-bx-635">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vnS-WZ-6Su"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLi-BQ-Lw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
